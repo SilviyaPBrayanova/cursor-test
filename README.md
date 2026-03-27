@@ -1,6 +1,6 @@
-# Demo Spring Boot Application
+# Demo Spring Command Line Application
 
-A Spring Boot application built with Gradle.
+A Spring Boot command-line application built with Gradle.
 
 ## Prerequisites
 
@@ -20,7 +20,17 @@ A Spring Boot application built with Gradle.
 ./gradlew bootRun
 ```
 
-The application will start on port 8080 by default.
+You can pass arguments to the application:
+
+```bash
+./gradlew bootRun --args='arg1 arg2'
+```
+
+Or run the built JAR directly:
+
+```bash
+java -jar build/libs/demo-0.0.1-SNAPSHOT.jar arg1 arg2
+```
 
 ### Run Tests
 
